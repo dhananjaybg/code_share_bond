@@ -1,6 +1,6 @@
 exports = async function() {
   
-    console.log("start _log_1");
+    console.log("start_log_1");
     const coll = context.services.get("DemoCluster").db("BondTest3").collection("msg");
     
     //pick latest 
@@ -11,13 +11,9 @@ exports = async function() {
         console.log("each 1");
         let evt = x.Header.Event;
         console.log(evt);
-        
         const transactions = context.services.get("DemoCluster").db("BondTest").collection(evt);
-      
         console.log("Fetch Record/Events");
-        
         transactions.insertOne(x);
-        
         console.log("Event classified to respective collection");
         
     });
