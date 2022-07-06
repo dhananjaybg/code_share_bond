@@ -1,6 +1,4 @@
 # code_share_bond
-Setup S3
+## write to collection 
 
-Setup 
-
-some more
+## Write to S3
